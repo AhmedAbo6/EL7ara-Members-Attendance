@@ -7,14 +7,14 @@ root.title("El7ara Members Attendance")
 
 conn = sqlite3.connect("el7ara_members.db")
 
-# c = conn.cursor() 
+c = conn.cursor() 
 
-# c.execute("""CREATE TABLE IF NOT EXISTS members (
-# 		name text,
-# 		phone_number integer,
-# 			)
+c.execute("""CREATE TABLE IF NOT EXISTS members (
+		name text,
+		phone_number integer,
+			)
 
-# 	""")
+	""")
 
 
 entering_frame = LabelFrame(root,text="Entering", padx=20, pady=20)
